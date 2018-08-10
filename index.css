@@ -1,0 +1,131 @@
+body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,pre,code,
+form,fieldset,legend,input,
+button,textarea,p,blockquote,
+th,td {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑", arial;
+  color: #333;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+i,em {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+select,input,img,select {
+  vertical-align:middle;
+}
+ol,ul{
+  list-style: none;
+}
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix {
+  overflow: auto;
+  _height: 1%;
+}
+
+.wrapper {
+  padding: 20px;
+}
+.title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+.scroll-box {
+  float: left;
+  width: 100px;
+  border: 1px solid #e1e1e1;
+}
+.scroll-box-second {
+  margin-left: -1px;
+}
+.list-box {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.list-box ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.list-box ul li {
+  height: 86px;
+  line-height: 86px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+.list-box ul li.active {
+  background: #faecec;
+  color: #f63838;
+}
+.list-box ul li.active:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 86px;
+  background: #f63838;
+}
+.up-down {
+  width: 100%;
+  color: #bcbbbb;
+  text-align: center;
+}
+.up-down i {
+  display: block;
+  padding: 30px 0;
+  cursor: not-allowed;
+}
+.up-down i.up {
+  background: url('./imgs/up.png') no-repeat center;
+}
+.up-down i.up-useful {
+  cursor: pointer;
+  background: url('./imgs/up-useful.png') no-repeat center;
+}
+.up-down i.down {
+  background: url('./imgs/down.png') no-repeat center;
+}
+.up-down i.down-useful {
+  cursor: pointer;
+  background: url('./imgs/down-useful.png') no-repeat center;
+}
+
+#btn {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #f63838;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 200px;
+  height: 300px;
+  text-align: center;
+  line-height: 200px;
+}

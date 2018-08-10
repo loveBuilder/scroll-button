@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	  <title>面向对象组件</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./index.css"/>
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+      <h3 class="title">面向对象写法实现内容滚动展示</h3>
+      <div id="btn">全部刷新</div>
+      <div class="scroll-box scroll-box-first">
+        <div class="list-box" id="first">
+          <ul></ul>
+        </div>
+        <div class="up-down">
+          <i class="up"></i>
+          <i class="down"></i>
+        </div>
+      </div>
+      <div class="scroll-box scroll-box-second">
+        <div class="list-box" id="second">
+          <ul></ul>
+        </div>
+        <div class="up-down">
+          <i class="up"></i>
+          <i class="down"></i>
+        </div>
+      </div>
+      <div class="content"></div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./buildList.js"></script>
+    <script src="./bindScrollBtn.js"></script>
+    <script>
+      var index = new Index();
+      index.initPage();
+    </script>
+  </body>
+</html>
